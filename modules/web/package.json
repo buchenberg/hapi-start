@@ -1,7 +1,7 @@
 {
   "name": "web",
   "version": "1.0.0",
-  "description": "UI built using Vue.js.",
+  "description": "The Hapi UI",
   "author": "Gregory Buchenberger <buchenberger@gmail.com>",
   "private": true,
   "scripts": {

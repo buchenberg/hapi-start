@@ -34,7 +34,7 @@ const manifest = {
         },
         {
             plugin: {
-                register: './modules/api',
+                register: Path.join(__dirname, 'modules/api'),
                 options: {}
             },
             options: {
@@ -46,7 +46,7 @@ const manifest = {
         },
         {
             plugin: {
-                register: './modules/web',
+                register: Path.join(__dirname, 'modules/web'),
                 options: {}
             },
             options: {
