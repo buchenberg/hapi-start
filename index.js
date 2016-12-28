@@ -4,22 +4,14 @@ const Glue = require('glue');
 const Path = require('path');
 
 const manifest = {
-    server: {
-        connections: {
-            routes: {
-                files: {
-                    relativeTo: Path.join(__dirname, 'modules/web/dist')
-                }
-            }
-        }
-    },
+    server: {},
     connections: [
         {
             port: 8000,
             labels: ['web'],
             routes: {
-                cors: {
-                    origin: ['*']
+                files: {
+                    relativeTo: Path.join(__dirname, 'modules/web/dist')
                 }
             }
         },
@@ -28,7 +20,7 @@ const manifest = {
             labels: ['api'],
             routes: {
                 cors: {
-                    origin: ['*']
+                    origin: ['http://localhost:8000']
                 }
             }
         }
