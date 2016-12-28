@@ -1,0 +1,24 @@
+{
+  "name": "napi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build:web": "cd modules/web && npm run build",
+    "start:dev": "node_modules/.bin/nodemon --inspect=9229 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "G. Buchenberger",
+  "license": "ISC",
+  "dependencies": {
+    "glue": "^4.1.0",
+    "hapi": "^16.0.2",
+    "hapi-swagger": "^7.5.0",
+    "inert": "^4.1.0",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
